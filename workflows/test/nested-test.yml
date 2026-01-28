@@ -7,12 +7,6 @@ on:
         description: "Input message string to log"
         required: true
         type: string
-  workflow_dispatch:
-    inputs:
-      message:
-        description: "Input message string to log"
-        required: true
-        type: string
 
 jobs:
   test:
