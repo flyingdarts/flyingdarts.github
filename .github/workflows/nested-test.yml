@@ -12,6 +12,13 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout flyingdarts/flyingdarts
+        uses: actions/checkout@v4
+        with:
+          repository: flyingdarts/flyingdarts
+          path: ./flyingdarts
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
       - name: Hello World Log
         run: |
           echo "Hello World!"
